@@ -57,5 +57,23 @@ const jsUs = {
     lastLoggedIn: ["Monday", "saturday"]
 }
 
+console.log(jsUs);
 console.log(jsUs[mysyn])
 console.log(typeof jsUs[mysyn])
+
+jsUs.email = "CALWIN@google.com" // this is the change that is kept 
+//Object.freeze(jsUs)          // here it is freeze and then the changes will be permanent
+jsUs.email = "fernandes@gmail.com"
+console.log(jsUs);
+
+jsUs.greeting = function Hello(){
+    console.log("Hello, World!!!");
+}
+
+jsUs.greetingTwo = function World(){
+    console.log(`Hello, World!!!. My Name is ${jsUs.name}`);
+}
+
+console.log(jsUs.greeting());
+console.log(jsUs.greetingTwo());
+console.log(jsUs);
